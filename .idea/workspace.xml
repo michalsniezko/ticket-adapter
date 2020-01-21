@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dbf3ba-4303-483e-a6d1-bb65ba44e900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IAmAliveControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-test-framework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IAmAliveController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,15 +113,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" nameIsGenerated="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="ticket-adapter_php:latest" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner configuration_file="/app/phpunit.xml" scope="XML" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -189,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579605285275</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix problem with functional tests, add first failing test">
+      <created>1579610531370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579610531370</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +196,8 @@
     <MESSAGE value="dockerize application" />
     <MESSAGE value="added config" />
     <MESSAGE value="added functional test bundle" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functional test bundle" />
+    <MESSAGE value="fix problem with functional tests, add first failing test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix problem with functional tests, add first failing test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1579606719457">
@@ -225,46 +220,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Volume_binding/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579606779632" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579610407552">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579610783619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610407552" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1579605283904">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610783619" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1579610530456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605283904" />
+    <state x="585" y="114" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610530456" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1579610405311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610405311" />
-    <state width="1407" height="281" key="GridCell.Tab.0.bottom" timestamp="1579610496184">
+    <state width="1407" height="281" key="GridCell.Tab.0.bottom" timestamp="1579610773062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.bottom/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610496184" />
-    <state width="1407" height="281" key="GridCell.Tab.0.center" timestamp="1579610496184">
+    <state width="1407" height="281" key="GridCell.Tab.0.bottom/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
+    <state width="1407" height="281" key="GridCell.Tab.0.center" timestamp="1579610773062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.center/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610496184" />
-    <state width="1407" height="281" key="GridCell.Tab.0.left" timestamp="1579610496183">
+    <state width="1407" height="281" key="GridCell.Tab.0.center/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
+    <state width="1407" height="281" key="GridCell.Tab.0.left" timestamp="1579610773062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.left/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610496183" />
-    <state width="1407" height="281" key="GridCell.Tab.0.right" timestamp="1579610496184">
+    <state width="1407" height="281" key="GridCell.Tab.0.left/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
+    <state width="1407" height="281" key="GridCell.Tab.0.right" timestamp="1579610773062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.right/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610496184" />
-    <state x="755" y="335" key="NewPhpClassDialog" timestamp="1579605306469">
+    <state width="1407" height="281" key="GridCell.Tab.0.right/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
+    <state x="755" y="335" key="NewPhpClassDialog" timestamp="1579610636344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="755" y="335" key="NewPhpClassDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605306468" />
+    <state x="755" y="335" key="NewPhpClassDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610636344" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579610366199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610366199" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579605287819">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579610535543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605287819" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610535543" />
     <state x="701" y="251" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1579606859717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,5 +268,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="882" height="285" key="javadoc.popup.new/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605429639" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579610568820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610568820" />
   </component>
 </project>

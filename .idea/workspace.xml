@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dbf3ba-4303-483e-a6d1-bb65ba44e900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_dev/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_dev/nginx/site.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_dev/php.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="ticket-adapter_php:latest">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache" />
@@ -53,6 +51,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WhZdPdluXndQpryOOMoj2BR9fC" />
@@ -68,9 +67,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -114,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579604486998</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dockerize application">
+      <created>1579604681673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579604681673</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,16 +132,33 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="require phpunit bridge" />
     <MESSAGE value="add project config" />
-    <option name="LAST_COMMIT_MESSAGE" value="add project config" />
+    <MESSAGE value="dockerize application" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerize application" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1579604486345">
+    <state x="540" y="175" key="#CLI_Interpreters" timestamp="1579604857725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579604486345" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579604489894">
+    <state x="540" y="175" key="#CLI_Interpreters/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579604857725" />
+    <state x="552" y="179" key="#Volume_binding" timestamp="1579604880331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579604489894" />
+    <state x="552" y="179" key="#Volume_binding/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579604880331" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1579604680755">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="114" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579604680755" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1579605125935">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605125935" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1579605165010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605165010" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579604683047">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579604683047" />
   </component>
 </project>

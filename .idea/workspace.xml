@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dbf3ba-4303-483e-a6d1-bb65ba44e900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IAmAliveController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/AddCommentToDataStoreHandlerTest/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/AddTicketToDataStoreHandlerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application/AddCommentToDataStoreHandlerTest/request.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +109,9 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\misn\code\ticket-adapter\tests" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\misn\code\ticket-adapter" />
     </key>
@@ -183,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579610531370</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first test passed">
+      <created>1579610823997</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579610823997</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +208,8 @@
     <MESSAGE value="added config" />
     <MESSAGE value="added functional test bundle" />
     <MESSAGE value="fix problem with functional tests, add first failing test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix problem with functional tests, add first failing test" />
+    <MESSAGE value="first test passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="first test passed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1579606719457">
@@ -224,42 +236,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610783619" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1579610530456">
+    <state x="349" y="106" width="1172" height="811" key="CommitChangelistDialog2" timestamp="1579758717287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610530456" />
+    <state x="349" y="106" width="1172" height="811" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579758717287" />
+    <state x="159" y="83" key="DiffContextDialog" timestamp="1579610816639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="159" y="83" key="DiffContextDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610816639" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1579610405311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610405311" />
-    <state width="1407" height="281" key="GridCell.Tab.0.bottom" timestamp="1579610773062">
+    <state width="1407" height="281" key="GridCell.Tab.0.bottom" timestamp="1579671647038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.bottom/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
-    <state width="1407" height="281" key="GridCell.Tab.0.center" timestamp="1579610773062">
+    <state width="1407" height="281" key="GridCell.Tab.0.bottom/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
+    <state width="1407" height="281" key="GridCell.Tab.0.center" timestamp="1579671647038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.center/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
-    <state width="1407" height="281" key="GridCell.Tab.0.left" timestamp="1579610773062">
+    <state width="1407" height="281" key="GridCell.Tab.0.center/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
+    <state width="1407" height="281" key="GridCell.Tab.0.left" timestamp="1579671647038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.left/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
-    <state width="1407" height="281" key="GridCell.Tab.0.right" timestamp="1579610773062">
+    <state width="1407" height="281" key="GridCell.Tab.0.left/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
+    <state width="1407" height="281" key="GridCell.Tab.0.right" timestamp="1579671647038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1407" height="281" key="GridCell.Tab.0.right/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610773062" />
-    <state x="755" y="335" key="NewPhpClassDialog" timestamp="1579610636344">
+    <state width="1407" height="281" key="GridCell.Tab.0.right/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
+    <state x="755" y="335" key="NewPhpClassDialog" timestamp="1579610921703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="755" y="335" key="NewPhpClassDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610636344" />
+    <state x="755" y="335" key="NewPhpClassDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610921703" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579610366199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610366199" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579610535543">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579610825554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610535543" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610825554" />
     <state x="701" y="251" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1579606859717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -268,9 +284,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="882" height="285" key="javadoc.popup.new/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579605429639" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579610568820">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579610872129">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610568820" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610872129" />
   </component>
 </project>

@@ -4,6 +4,8 @@
 namespace App\Tests\Application;
 
 
+use App\Application\AddTicketToDataStoreHandler;
+use App\Domain\ValueObject\TicketUpsertedEvent;
 use Liip\FunctionalTestBundle\Test\WebTestCase;
 
 class AddTicketToDataStoreHandlerTest extends WebTestCase
@@ -12,8 +14,14 @@ class AddTicketToDataStoreHandlerTest extends WebTestCase
     public function itHandlesATicket()
     {
         // get text from request.json, process it through the code and expect response back that is in response.json
-        $request = file_get_contents(__DIR__ . '/AddCommentToDataStoreHandlerTest/request.json');
+        $request = file_get_contents(__DIR__ . '/AddTicketToDataStoreHandlerTest/request.json');
 
+        $serializer = self::bootKernel()->getContainer()->get('jms_serializer');
 
+        $event = $serializer->deserialize($request, TicketUpsertedEvent::class, 'json');
+
+        $handler = new AddTicketToDataStoreHandler();
+
+        $this->assertEquals(true, $handler->handle($event));
     }
 }

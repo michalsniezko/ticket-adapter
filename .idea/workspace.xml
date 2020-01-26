@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dbf3ba-4303-483e-a6d1-bb65ba44e900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-docker-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-test-framework.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/AddTicketToDataStoreHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/ValueObject/TicketUpsertedEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Application/AddTicketToDataStoreHandlerTest/request.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ticket-adapter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ticket-adapter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IAmAliveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IAmAliveController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application/AddCommentToDataStoreHandlerTest/request.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/jms_serializer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application/AddCommentToDataStoreHandlerTest/response.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application/AddTicketToDataStoreHandlerTest/response.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Application/AddTicketToDataStoreHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application/AddTicketToDataStoreHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/IAmAliveControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IAmAliveControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +95,22 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
+      <path value="$PROJECT_DIR$/vendor/hoa/compiler" />
+      <path value="$PROJECT_DIR$/vendor/hoa/consistency" />
+      <path value="$PROJECT_DIR$/vendor/hoa/event" />
+      <path value="$PROJECT_DIR$/vendor/hoa/exception" />
+      <path value="$PROJECT_DIR$/vendor/hoa/iterator" />
+      <path value="$PROJECT_DIR$/vendor/hoa/math" />
+      <path value="$PROJECT_DIR$/vendor/hoa/protocol" />
+      <path value="$PROJECT_DIR$/vendor/hoa/regex" />
+      <path value="$PROJECT_DIR$/vendor/hoa/ustring" />
+      <path value="$PROJECT_DIR$/vendor/hoa/visitor" />
+      <path value="$PROJECT_DIR$/vendor/hoa/zformat" />
+      <path value="$PROJECT_DIR$/vendor/hoa/stream" />
+      <path value="$PROJECT_DIR$/vendor/hoa/file" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WhZdPdluXndQpryOOMoj2BR9fC" />
@@ -118,6 +136,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\code\ticket-adapter" />
       <recent name="C:\Users\misn\code\ticket-adapter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -163,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579603873750</updated>
-      <workItem from="1580039857120" duration="1493000" />
+      <workItem from="1580039857120" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="require phpunit bridge">
       <created>1579604411927</created>
@@ -214,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579610823997</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix paths">
+      <created>1580041440829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580041440829</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +255,8 @@
     <MESSAGE value="added functional test bundle" />
     <MESSAGE value="fix problem with functional tests, add first failing test" />
     <MESSAGE value="first test passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="first test passed" />
+    <MESSAGE value="fix paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix paths" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1580040374743">
@@ -260,10 +287,11 @@
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610783619" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580040214230" />
-    <state x="349" y="106" width="1172" height="811" key="CommitChangelistDialog2" timestamp="1579758717287">
+    <state x="349" y="106" width="1172" height="811" key="CommitChangelistDialog2" timestamp="1580041440218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="349" y="106" width="1172" height="811" key="CommitChangelistDialog2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579758717287" />
+    <state x="349" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580041440218" />
     <state x="159" y="83" key="DiffContextDialog" timestamp="1579610816639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,39 +301,45 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610405311" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580040538370" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580041421646">
+    <state width="1424" height="277" key="GridCell.Tab.0.bottom" timestamp="1580042545103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1407" height="281" key="GridCell.Tab.0.bottom/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580041421646" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580041421646">
+    <state width="1424" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580042545103" />
+    <state width="1424" height="277" key="GridCell.Tab.0.center" timestamp="1580042545103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1407" height="281" key="GridCell.Tab.0.center/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580041421646" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580041421646">
+    <state width="1424" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580042545103" />
+    <state width="1424" height="277" key="GridCell.Tab.0.left" timestamp="1580042545103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1407" height="281" key="GridCell.Tab.0.left/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580041421646" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580041421646">
+    <state width="1424" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580042545103" />
+    <state width="1424" height="277" key="GridCell.Tab.0.right" timestamp="1580042545103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1407" height="281" key="GridCell.Tab.0.right/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579671647038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580041421646" />
-    <state x="755" y="335" key="NewPhpClassDialog" timestamp="1579610921703">
+    <state width="1424" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580042545103" />
+    <state x="755" y="335" key="NewPhpClassDialog" timestamp="1580041958144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="755" y="335" key="NewPhpClassDialog/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610921703" />
+    <state x="755" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580041958144" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580041350737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610366199" />
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580041350737" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579610825554">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1580042224193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1580042224193" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580041444196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/1920.0.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1579610825554" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580041444196" />
     <state x="701" y="251" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1580041418493">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

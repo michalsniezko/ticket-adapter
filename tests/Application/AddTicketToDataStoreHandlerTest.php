@@ -12,7 +12,7 @@ class AddTicketToDataStoreHandlerTest extends WebTestCase
     public function itHandlesATicket()
     {
         // get text from request.json, process it through the code and expect response back that is in response.json
-        $request = file_get_contents(__DIR__ . 'AddCommentToDataStoreHandlerTest/request.json');
+        $request = file_get_contents(__DIR__ . '/AddCommentToDataStoreHandlerTest/request.json');
 
 
     }

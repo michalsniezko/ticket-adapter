@@ -9,7 +9,7 @@ use JMS\Serializer\SerializerInterface;
 class AddTicketToDataStoreHandler
 {
     /**
-     * @var \JMS\Serializer\SerializerInterface
+     * @var SerializerInterface
      */
     private $serializer;
 

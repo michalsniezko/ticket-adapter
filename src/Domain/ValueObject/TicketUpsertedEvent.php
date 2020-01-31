@@ -6,7 +6,15 @@ namespace App\Domain\ValueObject;
 
 class TicketUpsertedEvent
 {
-    private $message;
-    private $userId;
-    private $taskId;
+    private $data;
+
+    public function __construct($data)
+    {
+        $this->data = $data;
+    }
+
+    public function getData()
+    {
+        return $this->data;
+    }
 }

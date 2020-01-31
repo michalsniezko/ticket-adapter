@@ -1,9 +1,0 @@
-jms_serializer:
-  visitors:
-    xml:
-      format_output: '%kernel.debug%'
-    metadata:
-      auto_detection: false
-      directories:
-        events:
-          namespace_prefix: 'App\\'

@@ -1,0 +1,6 @@
+jms_serializer:
+  metadata:
+    directories:
+      events:
+        namespace_prefix: "App\\Domain\\ValueObject"
+        path: "%kernel.root_dir%/Application/config/serializer/valueobject"

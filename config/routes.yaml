@@ -4,4 +4,4 @@
 
 i-am-alive:
   path: /adapter/tickets/i-am-alive
-  controller: App\Controller\IAmAliveController::handle
+  controller: App\IAmAliveController::handle

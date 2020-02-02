@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<serializer>
+    <class name="App\Domain\Entity\Ticket">
+        <property name="userId" type="int" since-version="1.0"/>
+        <property name="taskId" type="int" since-version="1.0"/>
+        <property name="message" type="string" since-version="1.0"/>
+    </class>
+</serializer>

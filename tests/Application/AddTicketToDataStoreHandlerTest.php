@@ -6,6 +6,7 @@ namespace App\Tests\Application;
 
 use App\Application\AddTicketToDataStoreHandler;
 use App\Domain\ValueObject\TicketUpsertedEvent;
+use JMS\Serializer\SerializerInterface;
 use Liip\FunctionalTestBundle\Test\WebTestCase;
 
 class AddTicketToDataStoreHandlerTest extends WebTestCase
@@ -17,7 +18,7 @@ class AddTicketToDataStoreHandlerTest extends WebTestCase
         $request = file_get_contents(__DIR__ . '/AddTicketToDataStoreHandlerTest/request.json');
 
         /**
-         * @var \JMS\Serializer\SerializerInterface $serializer
+         * @var SerializerInterface $serializer
          */
         $serializer = self::bootKernel()->getContainer()->get('jms_serializer');
 

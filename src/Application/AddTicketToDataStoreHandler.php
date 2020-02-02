@@ -30,6 +30,6 @@ class AddTicketToDataStoreHandler
             'json'
         );
 
-
+        return $ticket->getMessage();
     }
 }

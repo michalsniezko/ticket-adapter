@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <serializer>
     <class name="App\Domain\ValueObject\TicketUpsertedEvent">
-        <property name="data" type="string" since-version="1.0"/>
+        <property name="data" type="App\Domain\Entity\Ticket" since-version="1.0"/>
     </class>
 </serializer>

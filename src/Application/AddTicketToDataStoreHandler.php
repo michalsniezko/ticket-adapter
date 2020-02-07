@@ -24,12 +24,14 @@ class AddTicketToDataStoreHandler
         $data = $event->getData();
 
         // in order to deserialize our object from json we need to first serialize it towards json
+        /** @var Ticket $ticket */
         $ticket = $this->serializer->deserialize(
             $this->serializer->serialize($data, 'json'),
             Ticket::class,
             'json'
         );
 
+        var_dump($ticket);
         return $ticket->getMessage();
     }
 }

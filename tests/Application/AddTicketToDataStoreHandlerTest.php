@@ -25,7 +25,10 @@ class AddTicketToDataStoreHandlerTest extends WebTestCase
         $event = $serializer->deserialize($request, TicketUpsertedEvent::class, 'json');
 
         $handler = new AddTicketToDataStoreHandler($serializer);
+        $handler->handle($event);
 
-        $this->assertEquals('Hello', $handler->handle($event));
+        $repository = $this->getContainer()->get('Test.App\Infrastructure\TicketRepository');
+
+        $this->assertEquals(1, $repository->findAll());
     }
 }

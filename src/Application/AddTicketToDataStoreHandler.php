@@ -30,8 +30,5 @@ class AddTicketToDataStoreHandler
             Ticket::class,
             'json'
         );
-
-        var_dump($ticket);
-        return $ticket->getMessage();
     }
 }

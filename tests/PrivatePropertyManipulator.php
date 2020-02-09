@@ -5,6 +5,8 @@ namespace App\Tests;
 use ReflectionException;
 use ReflectionProperty;
 
+
+// There is no need for getters and setters in the source code, so we use this to make our tests work:
 trait PrivatePropertyManipulator
 {
     public function setByReflection($object, string $property, $value): void
@@ -23,14 +25,9 @@ trait PrivatePropertyManipulator
 
     private function getAccessibleReflectionProperty($object, string $property): ReflectionProperty
     {
-        try {
-            $reflectionProperty = new ReflectionProperty($object, $property);
-            $reflectionProperty->setAccessible(true);
-
-            return $reflectionProperty;
-        } catch (ReflectionException $e) {
-            throw new \Exception($e->getMessage());
-        }
+        $reflectionProperty = new ReflectionProperty($object, $property);
+        $reflectionProperty->setAccessible(true);
+        return $reflectionProperty;
     }
 
 }

@@ -3,11 +3,13 @@
 namespace App\Tests\Infrastructure\Repository;
 
 use App\Domain\Entity\Ticket;
+use App\Infrastructure\Repository\TicketRepository;
 use App\Tests\PrivatePropertyManipulator;
 use PHPUnit\Framework\TestCase;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 // Only test the repository, everything that is not a valueobject will get mocked
-class TicketRepositoryTest extends TestCase
+class TicketRepositoryTest extends KernelTestCase
 {
     use PrivatePropertyManipulator;
 
@@ -21,8 +23,7 @@ class TicketRepositoryTest extends TestCase
         // regarding tickets, I have to use repository class throughout the application
 
         $ticket = $this->getTicket();
-        $repository = new TicketRepository();
-
+        $repository = self::bootKernel()->getContainer()->get('Test.App\Infrastructure\Repository\TicketRepository');
         $this->assertEquals(0, $repository->findAll());
         $repository->save($ticket);
         $this->assertEquals(1, $repository->findAll());

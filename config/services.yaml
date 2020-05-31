@@ -29,3 +29,9 @@ services:
     App\Application\AddTicketToDataStoreHandler:
         arguments:
             $serializer: "@jms_serializer"
+
+    App\Infrastructure\Repository\TicketRepository:
+        class: Doctrine\ORM\EntityRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - App\Domain\Entity\Ticket

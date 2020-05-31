@@ -1,0 +1,5 @@
+services:
+  _defaults:
+    public: true
+
+  Test.App\Infrastructure\Repository\TicketRepository: '@App\Infrastructure\Repository\TicketRepository'

@@ -1,0 +1,15 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsl="http://www.w3.org/2001/XMLSchema-instance"
+                  xsl:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping 
+                            https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="App\Domain\Entity\Ticket" repository-class="App\Infrastructure\Repository\TicketRepository">
+        <id name="id" type="integer" column="id" length="11">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="userId" type="string" length="191"/>
+        <field name="taskId" type="string" length="191"/>
+        <field name="message" type="text" />
+
+    </entity>
+</doctrine-mapping>
